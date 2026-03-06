@@ -4,6 +4,8 @@ This is a simplified version of the travel agent designed for a step-by-step wor
 
 ## Workshop Goals
 
+WORKSHOP HERE: https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli#
+
 By following the [`WORKSHOP.md`](WORKSHOP.md) guide, you will learn the fundamentals of the Google Agent Development Kit (ADK) through a clear, progressive path:
 
 1.  **Step 1: Create a Basic Agent:** Build your very first, simple ADK agent.
