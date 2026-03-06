@@ -13,13 +13,18 @@ By following the [`WORKSHOP.md`](WORKSHOP.md) guide, you will learn the fundamen
 
 This "add -> replace -> replace" approach is designed to isolate and teach each core concept effectively. For advanced users, the workshop also includes an optional step (`step03b`) that demonstrates how to make `google_search` and custom tools work together (see [issue 969](https://github.com/google/adk-python/issues/969) for the limitation).
 
+# 🚀 **[GO TO THE CODELAB!](https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli)** 🚀
+
 ## Getting Started
 
 Make sure you have `uv` installed for dependency management.
 
 ```bash
+# Initialize uv
+uv init
+
 # Install dependencies
 uv sync
 ```
 
-Start the workshop by following the instructions in [`WORKSHOP.md`](WORKSHOP.md).
+Start the workshop by following the instructions in the **[Official Codelab](https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli)**.

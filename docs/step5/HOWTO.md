@@ -2,15 +2,15 @@
 
 Here are the commands to clone the repository, ensure all branches are fetched, and check out the specific step 5 branch.
 
-```bash
+````bash
 # 1. Clone the repository into a specific directory
 # This clones the default branch (usually main) into the target folder
-git clone git@github.com:palladius/ai-friendly-agents.git ~/git/ai-friendly-agents-step5-branch/
+git clone git@github.com:google/adk-gemini-cli-workshop.git ~/git/adk-gemini-cli-workshop-step5-branch/
 
 # 2. Enter the directory
-cd ~/git/ai-friendly-agents-step5-branch/
+cd ~/git/adk-gemini-cli-workshop-step5-branch/
 
-# 3. Ensure we are tracking ALL remote branches 
+# 3. Ensure we are tracking ALL remote branches
 # (Useful if the repo was cloned with restrictions or just to be safe)
 git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
 
@@ -31,33 +31,33 @@ To create a local copy of another remote branch (e.g., `main`), just check it ou
 
 ```bash
 git checkout main
-```
+````
 
 Git will automatically set it up to track `origin/main`.
 
 ## test
 
 ```bash
-cd ~/git/ai-friendly-agents-step5-branch/
+cd ~/git/adk-gemini-cli-workshop-step5-branch/
 git checkout 20251127-step5
-find adk/workshops/simple-travel-agent/ | grep step05 &&
-    cd adk/workshops/simple-travel-agent/steps/ &&
+find steps/ | grep step05 &&
+    cd steps/ &&
     adk web
 ```
- should have the 5th step: `adk/workshops/simple-travel-agent/steps/step05_mcp2_nanobanana`
+
+should have the 5th step: `steps/step05_mcp2_nanobanana`
 
 > **Note:** If this folder is missing, you are likely still on the `main` branch! Run `git checkout 20251127-step5` to fix it.
 
-
 ## Demo
 
-If this works: 
+If this works:
 
 ```bash
-cd ~/git/ai-friendly-agents-step5-branch/ &&
+cd ~/git/adk-gemini-cli-workshop-step5-branch/ &&
     git checkout 20251127-step5 &&
-    find adk/workshops/simple-travel-agent/ | grep step05 &&
-    cd adk/workshops/simple-travel-agent/steps/ &&
+    find steps/ | grep step05 &&
+    cd steps/ &&
     adk web
 ```
 

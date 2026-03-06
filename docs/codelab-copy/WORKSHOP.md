@@ -10,7 +10,7 @@ Note: thjis workshop was first done in:
 
 <img src="events/adk-worskhop-qr-code.png" width="40%" align="right">
 
-[Workshop self-link](https://github.com/palladius/ai-friendly-agents/blob/main/adk/workshops/simple-travel-agent/WORKSHOP.md): https://goo.gle/adk-cli-workshop
+[Workshop self-link](https://github.com/google/adk-gemini-cli-workshop/blob/main/WORKSHOP.md): https://goo.gle/adk-cli-workshop
 
 **_Event Information_**
 
@@ -70,8 +70,8 @@ This is the moment where you can open your IDE (Visual Studio Code, IntelliJ, Ru
 
 ```bash
 # 1. Find an empty directory, and download this repo.
-git clone https://github.com/palladius/ai-friendly-agents/
-cd ai-friendly-agents/adk/workshops/simple-travel-agent/
+git clone https://github.com/google/adk-gemini-cli-workshop
+cd adk-gemini-cli-workshop/
 
 # 2. Create your solution empty skeleton
 mkdir -p mysolution/
@@ -286,10 +286,10 @@ For the rest, this is the same as above.
 
 ### Caveats/ Errors
 
-1. If you get a `robots.txt` restriction error, you cn patch the MCP with an ignore robots directive. 
-Read the docs for more details: https://github.com/openbnb-org/mcp-server-airbnb
+1. If you get a `robots.txt` restriction error, you cn patch the MCP with an ignore robots directive.
+   Read the docs for more details: https://github.com/openbnb-org/mcp-server-airbnb
 
-2. If you get a `timeout` error (5 seconds being too low for Airbnb to get responses), look at ADK documentation on how to increase the timeout to, say, 30 seconds. Or.. use Gemini CLI to do it! Note that on 3dec25m Cloud Shell gave me a timoeut error, I fixed the timeout error, and still got errors, until I forced it to the previous versin: `args=["-y", "@openbnb/mcp-server-airbnb@0.1.2", "--ignore-robots-txt"]`. 
+2. If you get a `timeout` error (5 seconds being too low for Airbnb to get responses), look at ADK documentation on how to increase the timeout to, say, 30 seconds. Or.. use Gemini CLI to do it! Note that on 3dec25m Cloud Shell gave me a timoeut error, I fixed the timeout error, and still got errors, until I forced it to the previous versin: `args=["-y", "@openbnb/mcp-server-airbnb@0.1.2", "--ignore-robots-txt"]`.
 
 ## 🏅 Milestone 1 Complete!
 
@@ -318,7 +318,7 @@ Here's a menu with some Ideas of different complexity.
 1.  🟢 [easy] Integrate `adk run`` with 🍌 [NanoBanana MCP](https://github.com/ConechoAI/Nano-Banana-MCP). Requires a [Gemini API Key](https://aistudio.google.com/api-keys). Here you'll be able to create images but not visualize them. See below for a harder variant.
 1.  🟡 [medium] Create a subagent who does the `HotelSearch` and create a `BudgetAgent` or a `LocationAgent` which can double down and iterate over hotels respecting your location needs, eg "not more than X km from LOCATION". If the API doesn't allow this, it might be some back and forth helped by GoogleSearch. Note: Gemini cLI can help you.
 1.  🟡 [medium] Implement a `AirbnbReviewAgent` which goes into the reviews and summarize positives and negatives in a few color-coded bullets, for 1 or N hotels reslting from a search. You already have 2 ingredients (GoogleSearch and MCP Airbnb), then you need to connect this to the main Agent and maybe invent some sort of protocol for them to communicate.
-1. 🟡 [medium] Integrate with [A2A](https://github.com/a2aproject/A2A). Make it an A2A agent! Again, ask Gemini CLI for help!
+1.  🟡 [medium] Integrate with [A2A](https://github.com/a2aproject/A2A). Make it an A2A agent! Again, ask Gemini CLI for help!
 1.  🔴 [complex] You can integrate with Flights or other MCP functionality to create a multi-faceted multi functional travel agent.
 1.  🔴 [complex] Integrate ADK web with 🍌 [NanoBanana MCP](https://github.com/ConechoAI/Nano-Banana-MCP). This is harder than the one above, and you can find some tips in https://github.com/palladius/ai-friendly-agents/issues/11 . This took the author 3 hours of back and forth with Gemini CLI, Gemini3 and both of us reading docs/code from `rag/`!
 
@@ -346,4 +346,3 @@ Because the `rag` folder is listed in your `.gitignore` file make sure your `.ge
 ```
 
 **Why?** We want Gemini to be able to read those files, while they're safely git-ignored. Technically you could also unhide all .gitignore files by setting `context.fileFiltering.respectGitIgnore` to `false` but this opens a lot of `node_modules/` and `__pycache__/` garbage - so the explicit folder inclusion is the preferred option.
-
