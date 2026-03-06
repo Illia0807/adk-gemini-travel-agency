@@ -4,9 +4,9 @@ This is a simplified version of the travel agent designed for a step-by-step wor
 
 ## Workshop Goals
 
-WORKSHOP HERE: https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli#
+# 🚀 **[GO TO THE CODELAB!](https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli)** 🚀
 
-By following the [`WORKSHOP.md`](WORKSHOP.md) guide, you will learn the fundamentals of the Google Agent Development Kit (ADK) through a clear, progressive path:
+By following the [Official Codelab](https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli) guide, you will learn the fundamentals of the Google Agent Development Kit (ADK) through a clear, progressive path:
 
 1.  **Step 1: Create a Basic Agent:** Build your very first, simple ADK agent.
 2.  **Step 2: Add a Custom Tool:** Enhance your agent by **adding** a custom Python date function (`now()`) as a tool.
@@ -14,8 +14,6 @@ By following the [`WORKSHOP.md`](WORKSHOP.md) guide, you will learn the fundamen
 4.  **Step 4: Integrate with MCP:** **Replace** the search tool with an MCP (Model Context Protocol) tool, showing how to connect to external services and use multiple compatible tools together.
 
 This "add -> replace -> replace" approach is designed to isolate and teach each core concept effectively. For advanced users, the workshop also includes an optional step (`step03b`) that demonstrates how to make `google_search` and custom tools work together (see [issue 969](https://github.com/google/adk-python/issues/969) for the limitation).
-
-# 🚀 **[GO TO THE CODELAB!](https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli)** 🚀
 
 ## Getting Started
 
