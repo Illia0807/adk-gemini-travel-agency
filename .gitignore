@@ -1,0 +1,6 @@
+*
+!mysolution/
+!.gitignore
+mysolution/.env
+mysolution/output_images/
+mysolution/images.db
